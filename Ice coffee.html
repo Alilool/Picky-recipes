@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Coffee Menu</title>
+    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <span>HOME / Ice Coffee</span>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="menu-items">
+        <div class="menu-item">
+            <img src="" style="height: 150px;">
+            <div class="menu-info">
+                <h3>Frappe Mocha</h3>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="" style="height: 150px;">
+            <div class="menu-info">
+                <h3>Frappe Caramel</h3>
+            </div>
+        </div>
+        <div data-item-id="Frapp" class="menu-item">
+            <img src="./assets/ICE COFFEE/Frappuccino.png" alt="Frappuccino">
+            <div class="menu-info">
+                <h3>Frappuccino</h3>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="" style="height: 150px;">
+            <div class="menu-info">
+                <h3>Frappe</h3>
+            </div>
+        </div>
+        <div data-item-id="Frapp_Caramel" class="menu-item">
+            <img src="./assets/ICE COFFEE/Frappuccino Caramel.png" alt="Frappuccino Caramel">
+            <div class="menu-info">
+                <h3>Frappuccino Caramel</h3>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="./assets/ICE COFFEE/Ice orange coffee.jpg" alt="Ice Orange Coffee">
+            <div class="menu-info">
+                <h3>Ice Orange Coffee</h3>
+            </div>
+        </div>
+        <div data-item-id="Frapp_Hazelnut" class="menu-item">
+            <img src="./assets/ICE COFFEE/Frappuccino Hazelnut.png" alt="Frappuccino Hazelnut">
+            <div class="menu-info">
+                <h3>Frappuccino Hazelnut</h3>
+            </div>
+        </div>
+        <div data-item-id="Frapp_Mocha" class="menu-item">
+            <img src="./assets/ICE COFFEE/Frappuccino Mocha.png" alt="Frappuccino Mocha">
+            <div class="menu-info">
+                <h3>Frappuccino Mocha</h3>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="./assets/ICE COFFEE/Frappuccino Hazelnut.png" alt="Frappuccino Hazelnut">
+            <div class="menu-info">
+                <h3>Frappuccino Hazelnut</h3>
+            </div>
+        </div>
+        <div data-item-id="Frapp_Berry" class="menu-item">
+            <img src="./assets/ICE COFFEE/Frappuccino Mix Berry.png" alt="Frappuccino Mix Berry">
+            <div class="menu-info">
+                <h3>Frappuccino Mix Berry</h3>
+            </div>
+        </div>
+        <div data-item-id="Ice_Capp" class="menu-item">
+            <img src="./assets/ICE COFFEE/Ice Cappuccino.png" alt="Ice Cappuccino">
+            <div class="menu-info">
+                <h3>Ice Cappuccino</h3>
+            </div>
+        </div>
+        <div data-item-id="Ice_Latte" class="menu-item">
+            <img src="./assets/ICE COFFEE/Ice Latte.png" alt="Ice Latte">
+            <div class="menu-info">
+                <h3>Ice Latte</h3>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="./assets/ICE COFFEE/Ice Latte.png" alt="Ice Spanish Latte">
+            <div class="menu-info">
+                <h3>Ice Spanish Latte</h3>
+            </div>
+        </div>
+        <div data-item-id="Ice_Nescafe" class="menu-item">
+            <img src="./assets/ICE COFFEE/Ice Nescafe.png" alt="Ice Nescafe">
+            <div class="menu-info">
+                <h3>Ice Nescafe</h3>
+            </div>
+        </div>
+        <div data-item-id="Ice_Mocha" class="menu-item">
+            <img src="./assets/ICE COFFEE/Ice Mocha.png" alt="Ice Mocha">
+            <div class="menu-info">
+                <h3>Ice Mocha</h3>
+            </div>
+        </div>
+        <div data-item-id="Ice_Choco" class="menu-item">
+            <img src="./assets/ICE COFFEE/Ice Chocolate.png" alt="Ice Chocolate">
+            <div class="menu-info">
+                <h3>Ice Chocolate</h3>
+            </div>
+        </div>
+        <div data-item-id="Ice_Black" class="menu-item">
+            <img src="./assets/ICE COFFEE/Ice Coffee Black.png" alt="Ice Coffee Black">
+            <div class="menu-info">
+                <h3>Ice Coffee Black</h3>
+            </div>
+        </div>
+    </div>
+    <!-- Modal HTML -->
+    <div id="itemModal" class="modal">
+        <div class="modal-content">
+            <div class="close_container">
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-item">
+                <!-- Image and details will be dynamically inserted here -->
+                <img id="modalImage" src="" alt="">
+                <h3 id="modalTitle"></h3>
+                <table id="ingredientsTable">
+                    <thead>
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Quantity</th>
+                            <th>Unit</th> <!-- New column for Unit -->
+                        </tr>
+                    </thead>
+                    <tbody id="ingredientsTableBody">
+                        <!-- Rows will be dynamically added here -->
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+
+</body>
+
+</html>

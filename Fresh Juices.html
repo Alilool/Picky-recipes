@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Coffee Menu</title>
+    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <span>HOME / Fresh Juices</span>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="menu-items">
+        <div data-item-id="Lemon_L" class="menu-item">
+            <img src="./assets/FRESH JUICES/Lemon fresh.png" alt="Lemon Fresh L">
+            <div class="menu-info">
+                <h3>Lemon Fresh L</h3>
+            </div>
+        </div>
+        <div data-item-id="Lemon_Mint_L" class="menu-item">
+            <img src="./assets/FRESH JUICES/Lemon Mint fresh.png" alt="Lemon Mint Fresh L">
+            <div class="menu-info">
+                <h3>Lemon Mint Fresh L</h3>
+            </div>
+        </div>
+        <div data-item-id="Orange_L" class="menu-item">
+            <img src="./assets/FRESH JUICES/orange fresh.png" alt="Orange Fresh L">
+            <div class="menu-info">
+                <h3>Orange Fresh L</h3>
+            </div>
+        </div>
+        <div data-item-id="Mango_L" class="menu-item">
+            <img src="./assets/FRESH JUICES/Mango fresh .png" alt="Mango Fresh L">
+            <div class="menu-info">
+                <h3>Mango Fresh L</h3>
+            </div>
+        </div>
+        <div data-item-id="Guava_L" class="menu-item">
+            <img src="./assets/FRESH JUICES/Guava fresh .png" alt="Guava Fresh L">
+            <div class="menu-info">
+                <h3>Guava Fresh L</h3>
+            </div>
+        </div>
+        <div data-item-id="Guava_Milk_L" class="menu-item">
+            <img src="./assets/FRESH JUICES/Guava milk fresh .png" alt="Guava Milk Fresh L">
+            <div class="menu-info">
+                <h3>Guava Milk Fresh L</h3>
+            </div>
+        </div>
+        <div data-item-id="Banana_L" class="menu-item">
+            <img src="./assets/FRESH JUICES/Banana fresh .png" alt="Banana Fresh L">
+            <div class="menu-info">
+                <h3>Banana Fresh L</h3>
+            </div>
+        </div>
+        <div data-item-id="Strawberry_L" class="menu-item">
+            <img src="./assets/FRESH JUICES/strawberry fresh .png" alt="Strawberry Fresh L">
+            <div class="menu-info">
+                <h3>Strawberry Fresh L</h3>
+            </div>
+        </div>
+        <div data-item-id="Strawberry_Milk_L" class="menu-item">
+            <img src="./assets/FRESH JUICES/strawberry milk fresh .png" alt="Strawberry milk Fresh L">
+            <div class="menu-info">
+                <h3>Strawberry milk Fresh L</h3>
+            </div>
+        </div>
+        <div data-item-id="Kiwi_L" class="menu-item">
+            <img src="./assets/FRESH JUICES/Kiwi fresh .png" alt="Kiwi Fresh L">
+            <div class="menu-info">
+                <h3>Kiwi Fresh L</h3>
+            </div>
+        </div>
+        <div data-item-id="Pineapple_L" class="menu-item">
+            <img src="./assets/FRESH JUICES/Pineapple juice.png" alt="Pineapple juice L">
+            <div class="menu-info">
+                <h3>Pineapple Juice L</h3>
+            </div>
+        </div>
+        <div data-item-id="Pomegranate_L" class="menu-item">
+            <img src="./assets/FRESH JUICES/Pomegranate juice.png" alt="Pomegranate Juice L">
+            <div class="menu-info">
+                <h3>Pomegranate Juice L</h3>
+            </div>
+        </div>
+        <div data-item-id="Date" class="menu-item">
+            <img src="./assets/FRESH JUICES/date juice.png" alt="Date">
+            <div class="menu-info">
+                <h3>Date</h3>
+            </div>
+        </div>
+    </div>
+    <!-- Modal HTML -->
+    <div id="itemModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-item">
+                <!-- Image and details will be dynamically inserted here -->
+                <img id="modalImage" src="" alt="">
+                <h3 id="modalTitle"></h3>
+                <table id="ingredientsTable">
+                    <thead>
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Quantity</th>
+                            <th>Unit</th> <!-- New column for Unit -->
+                        </tr>
+                    </thead>
+                    <tbody id="ingredientsTableBody">
+                        <!-- Rows will be dynamically added here -->
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+
+</body>
+
+</html>
