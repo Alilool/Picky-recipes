@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     var modal = document.getElementById("itemModal");
-    var span = document.getElementsByClassName("close")[0];
+    var close = document.getElementsByClassName("close_container")[0];
     var modalImage = document.getElementById("modalImage");
     var modalTitle = document.getElementById("modalTitle");
     var ingredientsTable = document.getElementById("ingredientsTableBody");
@@ -368,7 +368,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ],
         Ice_Black: [
             { ingredient: 'S4', quantity: 'S74', unit: 'S5' },
-            { ingredient: 'V4', quantity: 'V74', unit: 'V5' },       
+            { ingredient: 'V4', quantity: 'V74', unit: 'V5' },
         ],
         Ice_Latte: [
             { ingredient: 'S4', quantity: 'S75', unit: 'S5' },
@@ -386,6 +386,208 @@ document.addEventListener("DOMContentLoaded", function () {
             { ingredient: 'S4', quantity: 'S78', unit: 'S5' },
             { ingredient: 'U4', quantity: 'U78', unit: 'U5' },
             { ingredient: 'Y4', quantity: 'Y78', unit: 'Y5' },
+        ],
+        Cocoa_L: [
+            { ingredient: 'Q4', quantity: 'Q80', unit: 'Q5' },
+            { ingredient: 'U4', quantity: 'U80', unit: 'U5' },
+            { ingredient: 'AO4', quantity: 'AO80', unit: 'AO5' },
+            { ingredient: 'DA4', quantity: 'DA80', unit: 'DA5' },
+        ],
+        Cocoa_M: [
+            { ingredient: 'P4', quantity: 'P81', unit: 'P5' },
+            { ingredient: 'U4', quantity: 'U81', unit: 'U5' },
+            { ingredient: 'AO4', quantity: 'AO81', unit: 'AO5' },
+            { ingredient: 'DA4', quantity: 'DA81', unit: 'DA5' },
+        ],
+        Green_L: [
+            { ingredient: 'Q4', quantity: 'Q82', unit: 'Q5' },
+            { ingredient: 'CT4', quantity: 'CT82', unit: 'CT5' },
+            { ingredient: 'DA4', quantity: 'DA82', unit: 'DA5' },
+        ],
+        Green_M: [
+            { ingredient: 'P4', quantity: 'P83', unit: 'P5' },
+            { ingredient: 'CT4', quantity: 'CT83', unit: 'CT5' },
+            { ingredient: 'DA4', quantity: 'DA83', unit: 'DA5' },
+        ],
+        Green_Mint_L: [
+            { ingredient: 'Q4', quantity: 'Q84', unit: 'Q5' },
+            { ingredient: 'CU4', quantity: 'CU84', unit: 'CU5' },
+            { ingredient: 'DA4', quantity: 'DA84', unit: 'DA5' },
+        ],
+        Green_Mint_M: [
+            { ingredient: 'P4', quantity: 'P85', unit: 'P5' },
+            { ingredient: 'CU4', quantity: 'CU85', unit: 'CU5' },
+            { ingredient: 'DA4', quantity: 'DA85', unit: 'DA5' },
+        ],
+        Hot_Choc_L: [
+            { ingredient: 'Q4', quantity: 'Q86', unit: 'Q5' },
+            { ingredient: 'U4', quantity: 'U86', unit: 'U5' },
+            { ingredient: 'Z4', quantity: 'Z86', unit: 'Z5' },
+            { ingredient: 'DA4', quantity: 'DA86', unit: 'DA5' },
+        ],
+        Hot_Choc_M: [
+            { ingredient: 'P4', quantity: 'P87', unit: 'P5' },
+            { ingredient: 'U4', quantity: 'U87', unit: 'U5' },
+            { ingredient: 'Z4', quantity: 'Z87', unit: 'Z5' },
+            { ingredient: 'DA4', quantity: 'DA87', unit: 'DA5' },
+        ],
+        Hot_Cider_L: [
+            { ingredient: 'Q4', quantity: 'Q88', unit: 'Q5' },
+            { ingredient: 'CO4', quantity: 'CO88', unit: 'CO5' },
+            { ingredient: 'CV4', quantity: 'CV88', unit: 'CV5' },
+            { ingredient: 'DA4', quantity: 'DA88', unit: 'DA5' },
+        ],
+        Hot_Cider_M: [
+            { ingredient: 'P4', quantity: 'P89', unit: 'P5' },
+            { ingredient: 'CO4', quantity: 'CO89', unit: 'CO5' },
+            { ingredient: 'CV4', quantity: 'CV89', unit: 'CV5' },
+            { ingredient: 'DA4', quantity: 'DA89', unit: 'DA5' },
+        ],
+        Hot_Herbs_Coc_L: [
+            { ingredient: 'Q4', quantity: 'Q90', unit: 'Q5' },
+            { ingredient: 'CG4', quantity: 'CG90', unit: 'CG5' },
+            { ingredient: 'CV4', quantity: 'CV90', unit: 'CV5' },
+            { ingredient: 'CW4', quantity: 'CW90', unit: 'CW5' },
+            { ingredient: 'CX4', quantity: 'CX90', unit: 'CX5' },
+            { ingredient: 'DA4', quantity: 'DA90', unit: 'DA5' },
+        ],
+        Hot_Herbs_Coc_M: [
+            { ingredient: 'P4', quantity: 'P91', unit: 'P5' },
+            { ingredient: 'CG4', quantity: 'CG91', unit: 'CG5' },
+            { ingredient: 'CV4', quantity: 'CV91', unit: 'CV5' },
+            { ingredient: 'CW4', quantity: 'CW91', unit: 'CW5' },
+            { ingredient: 'CX4', quantity: 'CX91', unit: 'CX5' },
+            { ingredient: 'DA4', quantity: 'DA91', unit: 'DA5' },
+        ],
+        Hot_Herbs_L: [
+            { ingredient: 'Q4', quantity: 'Q92', unit: 'Q5' },
+            { ingredient: 'CW4', quantity: 'CW92', unit: 'CW5' },
+            { ingredient: 'DA4', quantity: 'DA92', unit: 'DA5' },
+        ],
+        Hot_Herbs_M: [
+            { ingredient: 'P4', quantity: 'P93', unit: 'P5' },
+            { ingredient: 'CW4', quantity: 'CW93', unit: 'CW5' },
+            { ingredient: 'DA4', quantity: 'DA93', unit: 'DA5' },
+        ],
+        Hot_Lemon_L: [
+            { ingredient: 'Q4', quantity: 'Q94', unit: 'Q5' },
+            { ingredient: 'CG4', quantity: 'CG94', unit: 'CG5' },
+            { ingredient: 'DA4', quantity: 'DA94', unit: 'DA5' },
+        ],
+        Hot_Lemon_M: [
+            { ingredient: 'P4', quantity: 'P95', unit: 'P5' },
+            { ingredient: 'CG4', quantity: 'CG95', unit: 'CG5' },
+            { ingredient: 'DA4', quantity: 'DA95', unit: 'DA5' },
+        ],
+        Hot_Milk_L: [
+            { ingredient: 'Q4', quantity: 'Q96', unit: 'Q5' },
+            { ingredient: 'U4', quantity: 'U96', unit: 'U5' },
+            { ingredient: 'DA4', quantity: 'DA96', unit: 'DA5' },
+        ],
+        Hot_Milk_M: [
+            { ingredient: 'P4', quantity: 'P97', unit: 'P5' },
+            { ingredient: 'U4', quantity: 'U97', unit: 'U5' },
+            { ingredient: 'DA4', quantity: 'DA97', unit: 'DA5' },
+        ],
+        Tea_Flav_L: [
+            { ingredient: 'Q4', quantity: 'Q98', unit: 'Q5' },
+            { ingredient: 'CS4', quantity: 'CS98', unit: 'CS5' },
+            { ingredient: 'DA4', quantity: 'DA98', unit: 'DA5' },
+        ],
+        Tea_Flav_M: [
+            { ingredient: 'P4', quantity: 'P99', unit: 'P5' },
+            { ingredient: 'CS4', quantity: 'CS99', unit: 'CS5' },
+            { ingredient: 'DA4', quantity: 'DA99', unit: 'DA5' },
+        ],
+        Tea_Flav_Milk_L: [
+            { ingredient: 'Q4', quantity: 'Q100', unit: 'Q5' },
+            { ingredient: 'U4', quantity: 'U100', unit: 'U5' },
+            { ingredient: 'CS4', quantity: 'CS100', unit: 'CS5' },
+            { ingredient: 'DA4', quantity: 'DA100', unit: 'DA5' },
+        ],
+        Tea_Flav_Milk_M: [
+            { ingredient: 'P4', quantity: 'P101', unit: 'P5' },
+            { ingredient: 'U4', quantity: 'U101', unit: 'U5' },
+            { ingredient: 'CS4', quantity: 'CS101', unit: 'CS5' },
+            { ingredient: 'DA4', quantity: 'DA101', unit: 'DA5' },
+        ],
+        Tea_L: [
+            { ingredient: 'Q4', quantity: 'Q102', unit: 'Q5' },
+            { ingredient: 'CQ4', quantity: 'CQ102', unit: 'CQ5' },
+            { ingredient: 'DA4', quantity: 'DA102', unit: 'DA5' },
+        ],
+        Tea_M: [
+            { ingredient: 'P4', quantity: 'P103', unit: 'P5' },
+            { ingredient: 'CQ4', quantity: 'CQ103', unit: 'CQ5' },
+            { ingredient: 'DA4', quantity: 'DA103', unit: 'DA5' },
+        ],
+        Tea_Mint_L: [
+            { ingredient: 'Q4', quantity: 'Q104', unit: 'Q5' },
+            { ingredient: 'CQ4', quantity: 'CQ104', unit: 'CQ5' },
+            { ingredient: 'CR4', quantity: 'CR104', unit: 'CR5' },
+            { ingredient: 'DA4', quantity: 'DA104', unit: 'DA5' },
+        ],
+        Tea_Mint_M: [
+            { ingredient: 'P4', quantity: 'P105', unit: 'P5' },
+            { ingredient: 'CQ4', quantity: 'CQ105', unit: 'CQ5' },
+            { ingredient: 'CR4', quantity: 'CR105', unit: 'CR5' },
+            { ingredient: 'DA4', quantity: 'DA105', unit: 'DA5' },
+        ],
+        Tea_Milk_L: [
+            { ingredient: 'Q4', quantity: 'Q106', unit: 'Q5' },
+            { ingredient: 'U4', quantity: 'U106', unit: 'U5' },
+            { ingredient: 'CQ4', quantity: 'CQ106', unit: 'CQ5' },
+            { ingredient: 'DA4', quantity: 'DA106', unit: 'DA5' },
+        ],
+        Tea_Milk_M: [
+            { ingredient: 'P4', quantity: 'P107', unit: 'P5' },
+            { ingredient: 'U4', quantity: 'U107', unit: 'U5' },
+            { ingredient: 'CQ4', quantity: 'CQ107', unit: 'CQ5' },
+            { ingredient: 'DA4', quantity: 'DA107', unit: 'DA5' },
+        ],
+        SM_BeryCola_L: [
+            { ingredient: 'S4', quantity: 'S117', unit: 'S5' },
+            { ingredient: 'BB4', quantity: 'BB117', unit: 'BB5' },
+            { ingredient: 'BC4', quantity: 'BC117', unit: 'BC5' },
+            { ingredient: 'DH4', quantity: 'DH119', unit: 'DH5' },
+        ],
+        SM_Blueberry_L: [
+            { ingredient: 'S4', quantity: 'S118', unit: 'S5' },
+            { ingredient: 'AQ4', quantity: 'AQ118', unit: 'AQ5' },
+            { ingredient: 'BB4', quantity: 'BB118', unit: 'BB5' },
+            { ingredient: 'DH4', quantity: 'DH119', unit: 'DH5' },
+        ],
+        SM_Lemon_L: [
+            { ingredient: 'S4', quantity: 'S119', unit: 'S5' },
+            { ingredient: 'CG4', quantity: 'CG119', unit: 'CG5' },
+            { ingredient: 'DH4', quantity: 'DH119', unit: 'DH5' },
+        ],
+        SM_Lemon_Mint_L: [
+            { ingredient: 'S4', quantity: 'S120', unit: 'S5' },
+            { ingredient: 'BK4', quantity: 'BK120', unit: 'BK5' },
+            { ingredient: 'CG4', quantity: 'CG120', unit: 'CG5' },
+            { ingredient: 'DH4', quantity: 'DH120', unit: 'DH5' },
+        ],
+        SM_Mango_L: [
+            { ingredient: 'S4', quantity: 'S121', unit: 'S5' },
+            { ingredient: 'CC4', quantity: 'CC121', unit: 'CC5' },
+            { ingredient: 'DH4', quantity: 'DH121', unit: 'DH5' },
+        ],
+        SM_Peach_L: [
+            { ingredient: 'S4', quantity: 'S122', unit: 'S5' },
+            { ingredient: 'AT4', quantity: 'AT122', unit: 'AT5' },
+            { ingredient: 'BG4', quantity: 'BG122', unit: 'BG5' },
+            { ingredient: 'DH4', quantity: 'DH122', unit: 'DH5' },
+        ],
+        SM_Raspberry_L: [
+            { ingredient: 'S4', quantity: 'S123', unit: 'S5' },
+            { ingredient: 'BE4', quantity: 'BE123', unit: 'BE5' },
+            { ingredient: 'DH4', quantity: 'DH123', unit: 'DH5' },
+        ],
+        SM_Watermelon_L: [
+            { ingredient: 'S4', quantity: 'S124', unit: 'S5' },
+            { ingredient: 'CL4', quantity: 'CL124', unit: 'CL5' },
+            { ingredient: 'DH4', quantity: 'DH124', unit: 'DH5' },
         ],
     };
 
@@ -443,7 +645,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error('Error loading Excel file:', error));
 
     // Close modal when clicking on the close button or outside the modal
-    span.onclick = function () {
+    close.onclick = function () {
         modal.style.display = "none";
         document.body.classList.remove('no-scroll');
     }
