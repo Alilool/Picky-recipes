@@ -39,7 +39,7 @@
                 <h3>Croissant Mix Cheese</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="Cheese_cake" class="menu-item">
             <img src="./assets/Dessert/Cheese Cake.jpg" alt="Cheese Cake">
             <div class="menu-info">
                 <h3>Cheese Cake</h3>
@@ -83,13 +83,13 @@
                 <h3>Cheese Cake Nutella</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="Molten_cake" class="menu-item">
             <img src="./assets/Dessert/Molten.jpg" alt="Molten Cake">
             <div class="menu-info">
                 <h3>Molten Cake</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="Brownies" class="menu-item">
             <img src="./assets/Dessert/Brownies.jpg" alt="Brownies">
             <div class="menu-info">
                 <h3>Brownies</h3>
@@ -101,54 +101,71 @@
                 <h3>Ice Éclair</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="Fudge" class="menu-item">
             <img src="./assets/Dessert/Fudge.jpg" alt="Fudge">
             <div class="menu-info">
                 <h3>Fudge</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="Donut" class="menu-item">
             <img src="./assets/Dessert/Donut.jpg" alt="Donut">
             <div class="menu-info">
                 <h3>Donut</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="Pate" class="menu-item">
             <img src="./assets/Dessert/Pate.jpg" alt="Pate">
             <div class="menu-info">
                 <h3>Pate</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="Cookies" class="menu-item">
             <img src="./assets/Dessert/Cookies.jpg" alt="Cookies">
             <div class="menu-info">
                 <h3>Cookies</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="Cookies_S" class="menu-item">
             <img src="./assets/Dessert/Small Cookies.jpg" alt="Small Cookie">
             <div class="menu-info">
                 <h3>Small Cookies</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="Croissant" class="menu-item">
             <img src="./assets/Dessert/Croissant.jpg" alt="Croissant">
             <div class="menu-info">
                 <h3>Croissant</h3>
             </div>
         </div>
     </div>
+    <!-- Modal HTML -->
     <div id="itemModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <div class="close_container">
+                <span class="close">&times;</span>
+            </div>
             <div class="modal-item">
                 <!-- Image and details will be dynamically inserted here -->
                 <img id="modalImage" src="" alt="">
                 <h3 id="modalTitle"></h3>
+                <table id="ingredientsTable">
+                    <thead>
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Quantity</th>
+                            <th>Unit</th> <!-- New column for Unit -->
+                        </tr>
+                    </thead>
+                    <tbody id="ingredientsTableBody">
+                        <!-- Rows will be dynamically added here -->
+                    </tbody>
+                </table>
+
             </div>
         </div>
     </div>
     <script src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
 
 
 </body>

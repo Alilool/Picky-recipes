@@ -46,9 +46,11 @@ body {
   border-radius: 990px;
   margin: 10px 0px;
   float: right;
+
   &:hover {
     background-color: #e4b42d;
   }
+
   cursor: pointer;
 }
 
@@ -153,6 +155,7 @@ tr:hover {
 }
 
 @media (max-width: 768px) {
+
   th,
   td {
     padding: 10px;

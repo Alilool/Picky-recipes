@@ -20,59 +20,76 @@
     </div>
 
     <!-- Menu Items -->
-    <div class="menu-item">
+    <div data-item-id="Waffle_honey" class="menu-item">
         <img src="./assets/Waffle/Honey.png" alt="Waffle Honey">
         <div class="menu-info">
             <h3>Waffle Honey</h3>
         </div>
     </div>
-    <div class="menu-item">
+    <div data-item-id="Waffle_caramel" class="menu-item">
         <img src="./assets/Waffle/Caramel.png" alt="Waffle Caramel">
         <div class="menu-info">
             <h3>Waffle Caramel</h3>
         </div>
     </div>
-    <div class="menu-item">
+    <div data-item-id="Waffle_white" class="menu-item">
         <img src="./assets/Waffle/White Chocolate.png" alt="Waffle White Chocolate">
         <div class="menu-info">
             <h3>Waffle White Chocolate</h3>
         </div>
     </div>
-    <div class="menu-item">
+    <div data-item-id="Waffle_straw" class="menu-item">
         <img src="./assets/Waffle/Strawberry.png" alt="Waffle Strawberry">
         <div class="menu-info">
             <h3>Waffle Strawberry</h3>
         </div>
     </div>
-    <div class="menu-item">
+    <div data-item-id="Waffle" class="menu-item">
         <img src="./assets/Waffle/waffle.png" alt="Waffle">
         <div class="menu-info">
             <h3>Waffle</h3>
         </div>
     </div>
-    <div class="menu-item">
+    <div data-item-id="Waffle_lotus" class="menu-item">
         <img src="./assets/Waffle/Caramel.png" alt="Waffle Lotus">
         <div class="menu-info">
             <h3>Waffle Lotus</h3>
         </div>
     </div>
-    <div class="menu-item">
+    <div data-item-id="Waffle_nutella" class="menu-item">
         <img src="./assets/Waffle/Nutella.png" alt="Waffle Nuttella">
         <div class="menu-info">
             <h3>Waffle Nutella</h3>
         </div>
     </div>
+    <!-- Modal HTML -->
     <div id="itemModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <div class="close_container">
+                <span class="close">&times;</span>
+            </div>
             <div class="modal-item">
                 <!-- Image and details will be dynamically inserted here -->
                 <img id="modalImage" src="" alt="">
                 <h3 id="modalTitle"></h3>
+                <table id="ingredientsTable">
+                    <thead>
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Quantity</th>
+                            <th>Unit</th> <!-- New column for Unit -->
+                        </tr>
+                    </thead>
+                    <tbody id="ingredientsTableBody">
+                        <!-- Rows will be dynamically added here -->
+                    </tbody>
+                </table>
+
             </div>
         </div>
     </div>
     <script src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
 
 
 </body>

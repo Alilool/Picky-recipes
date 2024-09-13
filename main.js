@@ -589,6 +589,164 @@ document.addEventListener("DOMContentLoaded", function () {
             { ingredient: 'CL4', quantity: 'CL124', unit: 'CL5' },
             { ingredient: 'DH4', quantity: 'DH124', unit: 'DH5' },
         ],
+        CO_Banana_berry: [
+            { ingredient: 'S4', quantity: 'S126', unit: 'S5' },
+            { ingredient: 'U4', quantity: 'U126', unit: 'U5' },
+            { ingredient: 'BB4', quantity: 'BB126', unit: 'BB5' },
+            { ingredient: 'BF4', quantity: 'BF126', unit: 'BF5' },
+            { ingredient: 'CD4', quantity: 'CD126', unit: 'CD5' },
+            { ingredient: 'DH4', quantity: 'DH126', unit: 'DH5' },
+        ],
+        CO_Cari_lovers: [
+            { ingredient: 'S4', quantity: 'S127', unit: 'S5' },
+            { ingredient: 'BF4', quantity: 'BF127', unit: 'BF5' },
+            { ingredient: 'BG4', quantity: 'BG127', unit: 'BG5' },
+            { ingredient: 'CC4', quantity: 'CC127', unit: 'CC5' },
+            { ingredient: 'CG4', quantity: 'CG127', unit: 'CG5' },
+            { ingredient: 'DH4', quantity: 'DH127', unit: 'DH5' },
+        ],
+        CO_Kiwi_pine: [
+            { ingredient: 'S4', quantity: 'S129', unit: 'S5' },
+            { ingredient: 'CF4', quantity: 'CF129', unit: 'CF5' },
+            { ingredient: 'CI4', quantity: 'CI129', unit: 'CI5' },
+            { ingredient: 'CP4', quantity: 'CP129', unit: 'CP5' },
+            { ingredient: 'DH4', quantity: 'DH129', unit: 'DH5' },
+        ],
+        CO_Mango_berry: [
+            { ingredient: 'S4', quantity: 'S130', unit: 'S5' },
+            { ingredient: 'BB4', quantity: 'BB130', unit: 'BB5' },
+            { ingredient: 'CC4', quantity: 'CC130', unit: 'CC5' },
+            { ingredient: 'DH4', quantity: 'DH130', unit: 'DH5' },
+        ],
+        CO_Mango_kiwi: [
+            { ingredient: 'S4', quantity: 'S131', unit: 'S5' },
+            { ingredient: 'CC4', quantity: 'CC131', unit: 'CC5' },
+            { ingredient: 'CF4', quantity: 'CF131', unit: 'CF5' },
+            { ingredient: 'DH4', quantity: 'DH131', unit: 'DH5' },
+        ],
+        CO_Mango_passion: [
+            { ingredient: 'S4', quantity: 'S132', unit: 'S5' },
+            { ingredient: 'BZ4', quantity: 'BZ132', unit: 'BZ5' },
+            { ingredient: 'CC4', quantity: 'CC132', unit: 'CC5' },
+            { ingredient: 'DH4', quantity: 'DH132', unit: 'DH5' },
+        ],
+        CO_Mojito: [
+            { ingredient: 'S4', quantity: 'S133', unit: 'S5' },
+            { ingredient: 'AD4', quantity: 'AD133', unit: 'AD5' },
+            { ingredient: 'CA4', quantity: 'CA133', unit: 'CA5' },
+            { ingredient: 'CG4', quantity: 'CG133', unit: 'CG5' },
+            { ingredient: 'DH4', quantity: 'DH133', unit: 'DH5' },
+        ],
+        CO_Mojito_blue: [
+            { ingredient: 'S4', quantity: 'S134', unit: 'S5' },
+            { ingredient: 'AD4', quantity: 'AD134', unit: 'AD5' },
+            { ingredient: 'BL4', quantity: 'BL134', unit: 'BL5' },
+            { ingredient: 'CA4', quantity: 'CA134', unit: 'CA5' },
+            { ingredient: 'CG4', quantity: 'CG134', unit: 'CG5' },
+            { ingredient: 'DH4', quantity: 'DH134', unit: 'DH5' },
+        ],
+        CO_Mojito_cherry: [
+            { ingredient: 'S4', quantity: 'S135', unit: 'S5' },
+            { ingredient: 'AD4', quantity: 'AD135', unit: 'AD5' },
+            { ingredient: 'BM4', quantity: 'BM135', unit: 'BM5' },
+            { ingredient: 'CA4', quantity: 'CA135', unit: 'CA5' },
+            { ingredient: 'CG4', quantity: 'CG135', unit: 'CG5' },
+            { ingredient: 'DH4', quantity: 'DH135', unit: 'DH5' },
+        ],
+        CO_Redbull_Coc: [
+            { ingredient: 'S4', quantity: 'S137', unit: 'S5' },
+            { ingredient: 'AF4', quantity: 'AF137', unit: 'AF5' },
+            { ingredient: 'BL4', quantity: 'BL137', unit: 'BL5' },
+            { ingredient: 'DH4', quantity: 'DH137', unit: 'DH5' },
+        ],
+        CO_Redbull_espre: [
+            { ingredient: 'S4', quantity: 'S138', unit: 'S5' },
+            { ingredient: 'V4', quantity: 'V138', unit: 'V5' },
+            { ingredient: 'AF4', quantity: 'AF138', unit: 'AF5' },
+            { ingredient: 'DH4', quantity: 'DH138', unit: 'DH5' },
+        ],
+        CO_Redbull_passion: [
+            { ingredient: 'S4', quantity: 'S139', unit: 'S5' },
+            { ingredient: 'AF4', quantity: 'AF139', unit: 'AF5' },
+            { ingredient: 'BZ4', quantity: 'BZ139', unit: 'BZ5' },
+            { ingredient: 'DH4', quantity: 'DH139', unit: 'DH5' },
+        ],
+        CO_SunRise: [
+            { ingredient: 'S4', quantity: 'S140', unit: 'S5' },
+            { ingredient: 'AD4', quantity: 'AD140', unit: 'AD5' },
+            { ingredient: 'BX4', quantity: 'BX140', unit: 'BX5' },
+            { ingredient: 'CG4', quantity: 'CG140', unit: 'CG5' },
+            { ingredient: 'DH4', quantity: 'DH140', unit: 'DH5' },
+        ],
+        CO_SunShine: [
+            { ingredient: 'S4', quantity: 'S141', unit: 'S5' },
+            { ingredient: 'AD4', quantity: 'AD141', unit: 'AD5' },
+            { ingredient: 'BK4', quantity: 'BK141', unit: 'BK5' },
+            { ingredient: 'CG4', quantity: 'CG141', unit: 'CG5' },
+            { ingredient: 'DH4', quantity: 'DH141', unit: 'DH5' },
+        ],
+        Cheese_cake: [
+            { ingredient: 'DE4', quantity: 'DE147', unit: 'DE5' },
+            { ingredient: 'DU4', quantity: 'DU147', unit: 'DU5' },
+        ],
+        Molten_cake: [
+            { ingredient: 'DC4', quantity: 'DC148', unit: 'DC5' },
+            { ingredient: 'DR4', quantity: 'DR148', unit: 'DR5' },
+        ],
+        Fudge: [
+            { ingredient: 'DC4', quantity: 'DC149', unit: 'DC5' },
+            { ingredient: 'DY4', quantity: 'DY149', unit: 'DY5' },
+        ],
+        Brownies: [
+            { ingredient: 'DC4', quantity: 'DC150', unit: 'DC5' },
+            { ingredient: 'EA4', quantity: 'EA150', unit: 'EA5' },
+        ],
+        Donut: [
+            { ingredient: 'DC4', quantity: 'DC152', unit: 'DC5' },
+            { ingredient: 'EB4', quantity: 'EB152', unit: 'EB5' },
+        ],
+        Croissant: [
+            { ingredient: 'DC4', quantity: 'DC153', unit: 'DC5' },
+            { ingredient: 'ED4', quantity: 'ED153', unit: 'ED5' },
+        ],
+        Pate: [
+            { ingredient: 'DC4', quantity: 'DC155', unit: 'DC5' },
+            { ingredient: 'EE4', quantity: 'EE155', unit: 'EE5' },
+        ],
+        Cookies: [
+            { ingredient: 'DC4', quantity: 'DC156', unit: 'DC5' },
+            { ingredient: 'EG4', quantity: 'EG156', unit: 'EG5' },
+        ],
+        Cookies_S: [
+            { ingredient: 'EM4', quantity: 'EM157', unit: 'EM5' },
+        ],
+        Waffle: [
+            { ingredient: 'EP4', quantity: 'EP188', unit: 'EP5' },
+        ],
+        Waffle_honey: [
+            { ingredient: 'CX4', quantity: 'CX189', unit: 'CX5' },
+            { ingredient: 'EP4', quantity: 'EP189', unit: 'EP5' },
+        ],
+        Waffle_nutella: [
+            { ingredient: 'AY4', quantity: 'AY190', unit: 'AY5' },
+            { ingredient: 'EP4', quantity: 'EP190', unit: 'EP5' },
+        ],
+        Waffle_caramel: [
+            { ingredient: 'AZ4', quantity: 'AZ191', unit: 'AZ5' },
+            { ingredient: 'EP4', quantity: 'EP191', unit: 'EP5' },
+        ],
+        Waffle_straw: [
+            { ingredient: 'BF4', quantity: 'BF192', unit: 'BF5' },
+            { ingredient: 'EP4', quantity: 'EP192', unit: 'EP5' },
+        ],
+        Waffle_white: [
+            { ingredient: 'AY4', quantity: 'AY193', unit: 'AY5' },
+            { ingredient: 'EP4', quantity: 'EP193', unit: 'EP5' },
+        ],
+        Waffle_lotus: [
+            { ingredient: 'BA4', quantity: 'BA194', unit: 'BA5' },
+            { ingredient: 'EP4', quantity: 'EP194', unit: 'EP5' },
+        ],
     };
 
     // Fetch the static Excel file

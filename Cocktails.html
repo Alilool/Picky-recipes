@@ -21,7 +21,7 @@
 
     <!-- Menu Items -->
     <div class="menu-items">
-        <div class="menu-item">
+        <div data-item-id="CO_Mango_kiwi" class="menu-item">
             <img src="./assets/Cocktails/Mango Kiwi.png" alt="Mango Kiwi">
             <div class="menu-info">
                 <h3>Mango Kiwi</h3>
@@ -39,96 +39,113 @@
                 <h3>Mojito Blueberry</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="CO_Mango_berry" class="menu-item">
             <img src="./assets/Cocktails/Mango Berry.png" alt="Mango Berry">
             <div class="menu-info">
                 <h3>Mango Berry</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="CO_Mango_passion" class="menu-item">
             <img src="./assets/Cocktails/Mango Passion.png" alt="Mango Passion">
             <div class="menu-info">
                 <h3>Mango Passion</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="CO_Banana_berry" class="menu-item">
             <img src="./assets/Cocktails/Banana Berry.png" alt="Banana Berry">
             <div class="menu-info">
                 <h3>Banana Berry</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="CO_Kiwi_pine" class="menu-item">
             <img src="./assets/Cocktails/Kiwi Pineapple.png" alt="Kiwi Pineapple">
             <div class="menu-info">
                 <h3>Kiwi Pineapple</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="CO_Mojito" data-item-id="CO_Mojito" class="menu-item">
             <img src="./assets/Cocktails/Mojito.png" alt="Mojito">
             <div class="menu-info">
                 <h3>Mojito</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="CO_Mojito_blue" class="menu-item">
             <img src="./assets/Cocktails/Mojito Blue.png" alt="Mojito Blue">
             <div class="menu-info">
                 <h3>Mojito Blue</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="CO_Mojito_cherry" class="menu-item">
             <img src="./assets/Cocktails/Mojito Cherry.png" alt="Mojito Cherry">
             <div class="menu-info">
                 <h3>Mojito Cherry</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="CO_Redbull_espre" class="menu-item">
             <img src="./assets/Cocktails/Redbull Espresso.png" alt="Redbull Espresso">
             <div class="menu-info">
                 <h3>Redbull Espresso</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="CO_Redbull_passion" class="menu-item">
             <img src="./assets/Cocktails/Redbull Passion.png" alt="Redbull Passion">
             <div class="menu-info">
                 <h3>Redbull Passion</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="CO_Redbull_Coc" class="menu-item">
             <img src="./assets/Cocktails/redbull coktail.png" alt="Redbull Cocktail">
             <div class="menu-info">
                 <h3>Redbull Cocktail</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="CO_Cari_lovers" class="menu-item">
             <img src="./assets/Cocktails/Caribbean Lovers.png" alt="Caribbean Lovers">
             <div class="menu-info">
                 <h3>Caribbean Lovers</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="CO_SunRise" class="menu-item">
             <img src="./assets/Cocktails/Sun Rise.png" alt="Sun Rise">
             <div class="menu-info">
                 <h3>Sun Rise</h3>
             </div>
         </div>
-        <div class="menu-item">
+        <div data-item-id="CO_SunShine" class="menu-item">
             <img src="./assets/Cocktails/Sun Shine.png" alt="Sun Shine">
             <div class="menu-info">
-                <h3>Sun Rise</h3>
+                <h3>Sun Shine</h3>
             </div>
         </div>
     </div>
+    <!-- Modal HTML -->
     <div id="itemModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <div class="close_container">
+                <span class="close">&times;</span>
+            </div>
             <div class="modal-item">
                 <!-- Image and details will be dynamically inserted here -->
                 <img id="modalImage" src="" alt="">
                 <h3 id="modalTitle"></h3>
+                <table id="ingredientsTable">
+                    <thead>
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Quantity</th>
+                            <th>Unit</th> <!-- New column for Unit -->
+                        </tr>
+                    </thead>
+                    <tbody id="ingredientsTableBody">
+                        <!-- Rows will be dynamically added here -->
+                    </tbody>
+                </table>
+
             </div>
         </div>
     </div>
     <script src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
 
 
 </body>
