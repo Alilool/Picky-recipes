@@ -36,9 +36,7 @@
     transition: 0.1s ease;
 }
 
-.category:hover {
-    transform: scale(1.1);
-}
+
 
 .category img {
     position: absolute;
@@ -75,5 +73,11 @@
 @media (max-width: 480px) {
     .container {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .category:hover {
+        transform: scale(1.1);
     }
 }
